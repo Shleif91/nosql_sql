@@ -1,0 +1,4 @@
+formatter.name: pretty
+suites:
+    app_bundle_suite:
+        namespace: AppBundle
