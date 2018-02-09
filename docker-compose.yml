@@ -34,3 +34,8 @@ services:
     volumes:
       - ./docker/postgresql/postgresql-data:/var/lib/mysql
       - ./docker/postgresql/dumps:/docker-entrypoint-initdb.d
+  memcached:
+      container_name: memcached
+      build: ./docker/memcached
+      ports:
+        - "11211:11211"
